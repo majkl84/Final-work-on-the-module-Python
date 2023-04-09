@@ -99,10 +99,9 @@ class VKYandexPhotoSaver:
             return f"{base_name}_{i}{ext}"
 
 
-vk_token = 'vk1.a.cBLZYEofgCAZBVVqez8VUGTmzZC1sKBdFO_BL7Fq08J9sstZHpdxfhFOMG4bwI9ZxKsQtk1MbFabQ2gI6GLlxruIFgvm1oacmZRNxHUmbF-xG2iBOiBFoBmSP-hVVrxaRj40u-OPsWgrmdyBU0ufXq5HSYI0lveIpT2QRBtevBH5oC7VUWZqQ-yuDct1TXWxxmouWutUwxxSzGUFPCN61Q'
-#vk_token = str(input('Введите токен VK:' ))
-yd_token = 'y0_AgAAAAAILgNiAADLWwAAAADfEGpsadQAxv4fQZmz9k1TBGpT5eyEhco'
-#yd_token = str(input('Введите токен Яндекс:' ))
+
+vk_token = str(input('Введите токен VK:' ))
+yd_token = str(input('Введите токен Яндекс:' ))
 saver = VKYandexPhotoSaver(vk_token, yd_token)
 saver.save_photos('2440629')
 #saver.save_photos(int(input('Введите ID gпользователя VK:' )))
